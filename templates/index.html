@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TFIDF Report</title>
+  <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+  <link rel = "stylesheet"
+   href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel = "stylesheet"
+   href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <script type = "text/javascript"
+   src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js">
+  </script>
+</head>
+
+<body>
+
+  <nav class="light-blue lighten-1" role="navigation">
+   <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Search</a>
+     <ul class="right hide-on-med-and-down">
+     </ul>
+
+     <ul id="nav-mobile" class="side-nav">
+     </ul>
+     <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+   </div>
+  </nav>
+  &nbsp;&nbsp; 
+  <div class="container">
+        <div class = "row">
+
+              <div class = "row">
+                <label>Select File to Upload</label>
+                <form required method=POST enctype=multipart/form-data action="{{ url_for('upload') }}">
+                  <div class="file-field input-field">
+                    <div class="waves-effect waves-light btn-large light-blue lighten-1">
+                      <span>File</span>
+                      <input type="file" name="file">
+                    </div>
+                    <div class="file-path-wrapper">
+                      <input class="file-path validate" type="text">
+                    </div>
+
+                   <button class="waves-effect waves-light btn-large light-blue lighten-1" type="submit" value='submit'>Submit
+                    <i class="material-icons right">send</i>
+                   </button>
+
+
+                  </div>
+                 </form>
+
+               </div>
+
+
+        </div>
+       </div>
+
+
+</body>
